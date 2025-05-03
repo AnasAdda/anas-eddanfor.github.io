@@ -174,6 +174,10 @@ body {
 #services, #projects, #certifications, #contact {
     padding: 6rem 0;
 }
+#phone_number{
+    direction: ltr;
+}
+
 
 #services{
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
