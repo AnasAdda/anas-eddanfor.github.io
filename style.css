@@ -352,56 +352,62 @@ body {
     }
 }
 
-@media only screen and (device-width: 1080px) and (device-height: 2400px) and (-webkit-device-pixel-ratio: 2.625) and (orientation: portrait) {
+
+
+@media only screen and 
+    (min-device-width: 360px) and 
+    (max-device-width: 768px) and 
+    (-webkit-min-device-pixel-ratio: 2) and 
+    (orientation: portrait),
+    
+    /* لأجهزة ذات شاشات طويلة (20:9) */
+    only screen and 
+    (device-aspect-ratio: 20/9) and 
+    (max-device-width: 800px) {
+    
+    /* تعديلات الكروت */
+    .card-effect {
+        max-width: 95%;
+        margin: 10px auto;
+        border-radius: 12px !important;
+    }
+
     .main {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                     url(imeges/000.png) center/cover fixed;
         margin-top: 60px;
     }
-    .card-effect {
-        max-width: 90% !important;
-        margin: 10px auto !important;
-        transform: scale(0.95);
+    .card-img-top {
+        height: 150px !important;
+        border-radius: 12px 12px 0 0 !important;
     }
     
-    .card-img-top {
-        height: 180px !important;
-        object-position: center 30%;
+    .card-body {
+        padding: 1rem !important;
     }
     
     .card-title {
-        font-size: 1rem !important;
-        line-height: 1.4;
+        font-size: 0.95rem !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-title::after {
+        width: 35px;
+        height: 1.5px;
     }
     
     .card-text {
-        font-size: 0.75rem !important;
+        font-size: 0.78rem !important;
         line-height: 1.6;
     }
     
     .btn-gold {
-        padding: 0.3rem 1rem !important;
-        font-size: 0.75rem !important;
+        padding: 0.3rem 1rem;
+        font-size: 0.75rem;
+        border-radius: 8px;
     }
     
+    /* تعديلات خاصة للأيقونات */
     .icon {
-        font-size: 2.2rem !important;
-        margin-bottom: 0.5rem !important;
+        font-size: 2rem !important;
     }
-}
-
-/* تعديلات خاصة بالوضع الأفقي */
-@media only screen and (device-width: 2400px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2.625) and (orientation: landscape) {
-    .card-effect {
-        max-width: 300px !important;
-        margin: 15px !important;
-    }
-    
-    .card-img-top {
-        height: 200px !important;
-    }
-    
-    .card-title {
-        font-size: 1.1rem !important;
-    }
-}
