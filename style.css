@@ -324,7 +324,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .main {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                     url(imeges/000.png) center/cover fixed;
