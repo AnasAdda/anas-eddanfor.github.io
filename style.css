@@ -321,3 +321,29 @@ body {
         font-size: 2.5rem !important;
     }
 }
+
+@media (max-width: 430px) {
+    .main {
+        margin-top: 60px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .card-effect {
+        max-width: 100%;
+    }
+    
+    .card-img-top {
+        height: 120px !important;
+    }
+    
+    .card-title::after {
+        width: 40px;
+        height: 2px;
+    }
+    
+    .icon {
+        font-size: 2.5rem !important;
+    }
+}
