@@ -298,6 +298,8 @@ body {
 
 @media (max-width: 576px) {
     .main {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(imeges/000.png) center/cover fixed;
         margin-top: 60px;
     }
 
@@ -324,6 +326,8 @@ body {
 
 @media (max-width: 360px) {
     .main {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(imeges/000.png) center/cover fixed;
         margin-top: 20px;
     }
 
