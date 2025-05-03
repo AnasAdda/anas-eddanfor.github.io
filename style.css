@@ -1,409 +1,323 @@
+/* style.css كامل مع تأثيرات موحدة للكروت */
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap');
 
-*{
-    font-family: 'El Messiri', sans-serif;
-        margin: 0;
+/* الأساسيات */
+* {
+    font-family: 'El+Messiri', sans-serif;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     direction: rtl;
-    text-align: right;
-}
-h3{
-    user-select:none;
-}
-a{
-    text-decoration: none;
 }
 
-header{
-    background-color: #262626;
-    opacity: 0.80;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 180px;
-}
-section{
-    padding: 80px 20px;
+body {
+    background-color: #f8f9fa;
+    overflow-x: hidden;
 }
 
-.logo img {
-    height: 45px;       /* يمكنك التعديل حسب الحاجة */
-    width: auto;
-    display: block;
-    opacity: 1;
+/* الهيدر */
+.navbar {
+    background-color: rgba(38, 38, 38, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(188, 150, 27, 0.2);
+    transition: all 0.3s;
 }
-.navigation a{
-    margin: 0 0 0 15px;
-    color: #bc961b;
-    font-size: 1.25em;
+
+.navbar-brand img {
+    transition: transform 0.3s;
+}
+
+.navbar-brand:hover img {
+    transform: rotate(-5deg);
+}
+
+.nav-link {
+    color: #bc961b !important;
     font-weight: 700;
-    width: fit-content;
     position: relative;
-
+    padding: 0.5rem 1.2rem !important;
 }
-.navigation a::before{
+
+.nav-link::before {
     content: attr(data-text);
     position: absolute;
-    -webkit-text-fill-color: #dedede;
-    transition:0.4s;
+    color: #dedede;
     width: 0;
     overflow: hidden;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.navigation a:hover::before{
+
+.nav-link:hover::before {
     width: 100%;
 }
-section{
-    padding: 100px 200px;
-    
-}
-.main{
-    width: 100%;
+
+/* القسم الرئيسي */
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(imeges/anas1.png) center/cover fixed;
     min-height: 100vh;
+    margin-top: 76px;
     display: flex;
     align-items: center;
-    background: url(imeges/anas1.png) no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-attachment:fixed;
-
 }
 
-
-.main h2{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #dedede;
-}
-.main h2 span{
-    display: inline-block;
-    color:#bc961b ;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.main h3 {
-    color: #dedede;
-    font-size: 2em;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.main .main_button{
-    color: #dedede;
-    background-color: #bc961b;
-    font-size: 1.1em;
-    font-weight: bold;
-    padding: 0.9em 1em;
-    letter-spacing:1px;
-    border-radius: 17px;
-    display: inline-block;
-    margin-bottom: 40px;
-    transition: 0.5s  ease;
-}
-.main_button:hover{
-    background-color:#e6b512 ;
-    transform: scale(1.1);
-}
-.social-icons a{
-    color: #dedede;
-    font-size: 2em;
-    padding-left: 30px;
-}
-.cards {
-    background: url(imeges/white.png) no-repeat;
-    background-size: cover;
-    backdrop-filter:invert(50px);
-    background-position: center;
-    background-attachment:fixed;
-}
-.title{
-    display: flex;
-    justify-content: center;
-    color: #be9100;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-    
-}
-.content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-.content .card{
-    background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
-    border-radius: 15px;
-    padding: 25px;
+/* تأثيرات الكروت الموحدة */
+.card-effect {
+    background: #fff !important;
+    border: 2px solid transparent !important;
+    border-radius: 15px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
     margin: 15px;
-    transition: 0.7s ease;
 }
-.content .card:hover{
-    transform: scale(1.104);
+
+.card-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(188, 150, 27, 0.08), transparent);
+    transition: 0.6s;
 }
-.content .card .icon{
-    color: #bc961b;
-    font-size: 8em;
-    text-align: center;
+
+.card-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+    border-color: #bc961b !important;
 }
-.info{
-    text-align: center;
+
+.card-effect:hover::before {
+    right: 100%;
 }
-.info h3{
-    color: #bc961b;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
+
+.card-effect img {
+    transition: transform 0.4s ease;
+    height: 220px;
+    object-fit: cover;
 }
-.projects{
-    background: url(imeges/black.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment:fixed;
+
+.card-effect:hover img {
+    transform: scale(1.05);
 }
-.projects .content{
-    margin-top: 50px;
+
+.card-effect .icon {
+    font-size: 3.5rem !important;
+    color: #bc961b !important;
+    transition: all 0.4s;
 }
-.project_card{
-    
-    background-color:#fff ;
-    border: 2px solid #dedede;
-    min-height: 14em;
-    width: 25em;
+
+.card-effect:hover .icon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* عناصر داخل الكروت */
+.card-title {
+    color: #2d2d2d !important;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background: #bc961b;
+    border-radius: 2px;
+}
+
+.card-text {
+    color: #555 !important;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* الأزرار */
+.btn-gold {
+    background: #bc961b !important;
+    border: 2px solid #bc961b !important;
+    color: #fff !important;
+    position: relative;
     overflow: hidden;
-    border-radius: 15px;
-    margin: 20px;
-    transition: 0.7s ease;
+    transition: all 0.4s;
 }
-.project_card:hover{
-    transform: scale(1.1);
-}
-.project_card:hover .img{
-    opacity: 0.95;
-}
-.project_card .img img{
+
+.btn-gold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
     width: 100%;
-}
-.project-info{
-    padding: 1em;
-}
-project-category{
-    font-size: 0.8em;
-    color: #000;
-
-}
-.project-title{
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-.project-title .more_details{
-    color: #bc961b;
-}
-.project-title .more_details:hover{
-    color: #262626;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: 0.6s;
 }
 
-
-.certifications{
-    background: url(imeges/white.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment:fixed;
-}
-.projects .content{
-    margin-top: 30px;
-}
-.certification_card{
-    background-color:#fff ;
-    border: 4px solid #fafafa;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
-    min-height: 14em;
-    width: 25em;
-    overflow: hidden;
-    border-radius: 15px;
-    margin: 20px;
-    transition: 0.7s ease;
-}
-.certification_card:hover{
-    transform: scale(1.1);
-}
-.certification_card:hover .img{
-    opacity: 0.95;
-}
-.certification_card .img img{
-    width: 100%;
-}
-.project-info{
-    padding: 1em;
-}
-project-category{
-    font-size: 0.8em;
-    color: #000;
-
-}
-.project-title{
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-.project-title .more_details{
-    color: #bc961b;
-}
-.project-title .more_details:hover{
-    color: #262626;
-}
-.contact {
-    background: url(imeges/black.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment:fixed;
-}
-.contact .content .icon{
-    font-size: 4.5em;
-}
-.contact .info h3{
-    color: #000;
-}
-.contact .info p{
-    font-size: 1.2em;
-}
-.footer{
-    display: flex;
-    justify-content: space-between;
-    background-image: url(imeges/black.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment:fixed;
-    color: #dedede;
-    padding: 1.5em;
-}
-.footer .social-icons a{
-    font-size:1.3em ;
-    padding: 0px 12px 0px 0px;
-    color: #dedede;
-
-}
-.footer p{
-    font-size: 1.2em;
-    font-weight: 600;
-    align-self: center;
-}
-.footer p span{
-    color: #bc961b;
+.btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(188, 150, 27, 0.3) !important;
 }
 
-@media(max-width:1620px){
-    header{
-        width: 100%;
-        padding: 12px 20px;
-    }
-    .main{
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        background: url(imeges/anas1.png) no-repeat;
-        background-size:cover;
-        background-position: center;
-        background-attachment:fixed;
-    }
-    .navigation a{
-        
-        padding-left: 10px;
-    }
-    section{
-        padding: 80px 20px;
-    }
+.btn-gold:hover::before {
+    right: 100%;
+}
 
+/* الأقسام المختلفة */
+#services, #projects, #certifications, #contact {
+    padding: 6rem 0;
+}
+
+#services{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url(imeges/white.png) center/cover fixed;
+}
+
+#projects{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url(imeges/black.png) center/cover fixed;
+}
+
+#certifications{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url(imeges/white.png) center/cover fixed;
+}
+#contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url(imeges/black.png) center/cover fixed;
+}
+.section-title {
     
-    .main{
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        background: url(imeges/anas1.png) no-repeat;
-        background-size:cover;
-        background-position: right;
-        background-attachment:fixed;
-    }
-    .main div{
-        padding: 20px 60px;
-        border-radius: 15px 50px 30px 15px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 4rem;
+}
 
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 120px;
+    height: 4px;
+    background: #bc961b;
+    border-radius: 2px;
+}
+
+/* الفوتر */
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url(imeges/black.png) center/cover fixed;
+
+    backdrop-filter: blur(8px);
+    border-top: 2px solid rgba(188, 150, 27, 0.2);
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.social-icons a:hover {
+    background: rgba(188, 150, 27, 0.2);
+    transform: translateY(-5px);
+}
+
+/* الوسائط المتجاوبة */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: rgba(38, 38, 38, 0.98);
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
     }
 
-    .content{
-        flex-direction:row-reverse ;
-        align-items: center;
+    .card-effect {
+        margin: 10px 0;
     }
-    .projects .content .project_card{
-        width: 21.25em; ;
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 768px) {
-    section {
-        padding: 60px 5%;
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .card-effect {
+        max-width: 300px;
+        margin: 10px auto;
     }
     
-    .navigation a {
-        font-size: 0.9em;
-        margin: 0 10px;
+    .card-img-top {
+        height: 150px !important;
     }
     
-    .logo img {
-        height: 35px;
+    .card-body {
+        padding: 1rem !important;
     }
     
-    .main .social-icons a {
-        font-size: 1.5em;
-        padding-left: 15px;
+    .card-title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
     
-    .project_card:hover,
-    .certification_card:hover {
-        transform: none;
+    .card-text {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    .btn-gold {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.8rem;
     }
 }
 
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 576px) {
+    .main {
+        margin-top: 60px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .card-effect {
+        max-width: 100%;
     }
     
-    .navigation {
-        justify-content: center;
+    .card-img-top {
+        height: 120px !important;
     }
     
-    .main h2 {
-        font-size: 1em;
+    .card-title::after {
+        width: 40px;
+        height: 2px;
     }
     
-    .main_button {
-        font-size: 0.9em;
-    }
-    
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .footer .social-icons {
-        margin-top: 15px;
+    .icon {
+        font-size: 2.5rem !important;
     }
 }

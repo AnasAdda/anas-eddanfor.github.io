@@ -1,282 +1,327 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Anas Addanfor</title>
-    </head>
-    <body>
-        <!-- start header -->
-        <header>
-            <a href="#" class="logo">
-                <img src="imeges/logoGold.svg" alt="شعار أنس الدنفور" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>أنس الدنفور</title>
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="imeges/logoGold.svg" alt="شعار أنس الدنفور" height="45">
             </a>
-            <nav class="navigation">
-                <a href="#services" data-text="الخدمات">الخدمات</a>
-                <a href="#projects" data-text="المشاريع">المشاريع</a>
-                <a href="#certifications" data-text="الشهادات">الشهادات</a>
-                <a href="#contact" data-text="التواصل">التواصل</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav gap-3">
+                    <a class="nav-link active" href="#services">الخدمات</a>
+                    <a class="nav-link" href="#projects">المشاريع</a>
+                    <a class="nav-link" href="#certifications">الشهادات</a>
+                    <a class="nav-link" href="#contact">التواصل</a>
+                </div>
             </nav>
-        </header>
-    
-        <!-- end header -->
-    
-    
-        <!-- start main -->
-        <section class="main">
-            <div>
-                <h2>مرحبا بك أنا أنس الدنفور<br><span>مهندس تحكم وأتمتة</span></h2>
-                <h3>أتشرف بالتعاون معك</h3>
-                <a href="#projects" class="main_button">أنظر إلى مشاريعي </a>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100011719296874"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/anas-eddanfor-bb068420b/"><i class="fab fa-linkedin"></i></a>
-                    <a href="http://wa.me/+218911917490"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:anas.addanfor@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-                </div>
-            </div>
-        </section>
-        <section class="cards" id="services">
-            <h2 class="title">الخدمات</h2>
-            <div class="content">
-                <!-- 01 -->
-                <div class="card">
-                    <div class="icon">
-                        <i class="fas fa-edit"></i>
-                    </div>
-                    <div class="info">
-                        <h3>lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequatur.</p>
-                    </div>
-                </div>
-                <!-- 02 -->
-                <div class="card">
-                    <div class="icon">
-                        <i class="fas fa-edit"></i>
-                    </div>
-                    <div class="info">
-                        <h3>lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequatur.</p>
-                    </div>
-                </div>
-                            <!-- 03 -->
-                <div class="card">
-                    <div class="icon">
-                        <i class="fas fa-edit"></i>
-                    </div>
-                    <div class="info">
-                        <h3>lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequatur.</p>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section class="main">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 col-md-10 text-white">
+                    <h1 class="display-4 fw-bold mb-4">مرحبا بك أنا أنس الدنفور<br>
+                        <span class="text-warning">مهندس تحكم وأتمتة</span>
+                    </h1>
+                    <h3 class="mb-5">أتشرف بالتعاون معك</h3>
+                    <a href="#projects" class="btn btn-gold btn-lg rounded-pill fw-bold display-4 px-5 py-3">استعرض المشاريع</a>
+                    <div class="mt-5 social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100011719296874" class="text-white me-4"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/anas-eddanfor-bb068420b/" class="text-white me-4"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="http://wa.me/+218911917490" class="text-white me-4"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        <a href="mailto:anas.addanfor@gmail.com" class="text-white"><i class="far fa-envelope fa-2x"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="projects" id="projects">
-            <h2 class="title">المشاريع</h2>
-            <div class="content">
-                <div class="project_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
-                    </div>
-                </div>
-                <div class="project_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
+        </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">الخدمات المقدمة</h2>
+            <div class="row g-4">
+                <!--1-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cogs icon mb-4"></i>
+                            <h3 class="card-title mobile-sm-text">تصميم أنظمة التحكم</h3>
+                            <p class="card-text mobile-sm-text">تصميم وتنفيذ أنظمة التحكم الصناعية المتكاملة باستخدام أحدث التقنيات</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
+
+                <!--2-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cogs icon mb-4"></i>
+                            <h3 class="card-title mobile-sm-text">تصميم أنظمة التحكم</h3>
+                            <p class="card-text mobile-sm-text">تصميم وتنفيذ أنظمة التحكم الصناعية المتكاملة باستخدام أحدث التقنيات</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
+
+                <!--3-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cogs icon mb-4"></i>
+                            <h3 class="card-title mobile-sm-text">تصميم أنظمة التحكم</h3>
+                            <p class="card-text mobile-sm-text">تصميم وتنفيذ أنظمة التحكم الصناعية المتكاملة باستخدام أحدث التقنيات</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
+
+                <!--4-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cogs icon mb-4"></i>
+                            <h3 class="card-title mobile-sm-text">تصميم أنظمة التحكم</h3>
+                            <p class="card-text mobile-sm-text">تصميم وتنفيذ أنظمة التحكم الصناعية المتكاملة باستخدام أحدث التقنيات</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
+
+                <!--5-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cogs icon mb-4"></i>
+                            <h3 class="card-title mobile-sm-text">تصميم أنظمة التحكم</h3>
+                            <p class="card-text mobile-sm-text">تصميم وتنفيذ أنظمة التحكم الصناعية المتكاملة باستخدام أحدث التقنيات</p>
+                        </div>
                     </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
+                </div>
+
+                <!--6-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cogs icon mb-4"></i>
+                            <h3 class="card-title mobile-sm-text">تصميم أنظمة التحكم</h3>
+                            <p class="card-text mobile-sm-text">تصميم وتنفيذ أنظمة التحكم الصناعية المتكاملة باستخدام أحدث التقنيات</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- كروت خدمات إضافية بنفس النمط -->
+            </div>
+        </div>
+    </section>
+
+    <!-- المشاريع -->
+    <section id="projects" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center text-white mb-5">المشاريع المنفذة</h2>
+            <div class="row g-4">
+                <!--1-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/project1.jpg" class="card-img-top mobile-sm-img" alt="مشروع 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">نظام أتمتة مصنع</h3>
+                            <p class="card-text mobile-sm-text">تصميم نظام تحكم كامل لمصنع إنتاجي باستخدام PLC</p>
+                            <a href="#" class="btn btn-gold btn-sm">تفاصيل المشروع</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/project1.jpg" class="card-img-top mobile-sm-img" alt="مشروع 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">نظام أتمتة مصنع</h3>
+                            <p class="card-text mobile-sm-text">تصميم نظام تحكم كامل لمصنع إنتاجي باستخدام PLC</p>
+                            <a href="#" class="btn btn-gold btn-sm">تفاصيل المشروع</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--3-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/project1.jpg" class="card-img-top mobile-sm-img" alt="مشروع 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">نظام أتمتة مصنع</h3>
+                            <p class="card-text mobile-sm-text">تصميم نظام تحكم كامل لمصنع إنتاجي باستخدام PLC</p>
+                            <a href="#" class="btn btn-gold btn-sm">تفاصيل المشروع</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--4-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/project1.jpg" class="card-img-top mobile-sm-img" alt="مشروع 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">نظام أتمتة مصنع</h3>
+                            <p class="card-text mobile-sm-text">تصميم نظام تحكم كامل لمصنع إنتاجي باستخدام PLC</p>
+                            <a href="#" class="btn btn-gold btn-sm">تفاصيل المشروع</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--5-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/project1.jpg" class="card-img-top mobile-sm-img" alt="مشروع 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">نظام أتمتة مصنع</h3>
+                            <p class="card-text mobile-sm-text">تصميم نظام تحكم كامل لمصنع إنتاجي باستخدام PLC</p>
+                            <a href="#" class="btn btn-gold btn-sm">تفاصيل المشروع</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--6-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/project1.jpg" class="card-img-top mobile-sm-img" alt="مشروع 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">نظام أتمتة مصنع</h3>
+                            <p class="card-text mobile-sm-text">تصميم نظام تحكم كامل لمصنع إنتاجي باستخدام PLC</p>
+                            <a href="#" class="btn btn-gold btn-sm">تفاصيل المشروع</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- كروت مشاريع إضافية بنفس النمط -->
+            </div>
+        </div>
+    </section>
+
+    <!-- الشهادات -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">الشهادات العلمية</h2>
+            <div class="row g-4">
+                <!--1-->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/cert1.jpg" class="card-img-top mobile-sm-img" alt="شهادة 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">شهادة مهندس معتمد</h3>
+                            <p class="card-text mobile-sm-text">شهادة مهنية في أنظمة التحكم الصناعية من IEEE</p>
+                        </div>
+                    </div>
+                </div>
+                 <!--2-->
+                 <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/cert1.jpg" class="card-img-top mobile-sm-img" alt="شهادة 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">شهادة مهندس معتمد</h3>
+                            <p class="card-text mobile-sm-text">شهادة مهنية في أنظمة التحكم الصناعية من IEEE</p>
+                        </div>
+                    </div>
+                </div>
+                 <!--3-->
+                 <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/cert1.jpg" class="card-img-top mobile-sm-img" alt="شهادة 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">شهادة مهندس معتمد</h3>
+                            <p class="card-text mobile-sm-text">شهادة مهنية في أنظمة التحكم الصناعية من IEEE</p>
+                        </div>
+                    </div>
+                </div>
+                 <!--4-->
+                 <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/cert1.jpg" class="card-img-top mobile-sm-img" alt="شهادة 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">شهادة مهندس معتمد</h3>
+                            <p class="card-text mobile-sm-text">شهادة مهنية في أنظمة التحكم الصناعية من IEEE</p>
+                        </div>
+                    </div>
+                </div>
+                 <!--5-->
+                 <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/cert1.jpg" class="card-img-top mobile-sm-img" alt="شهادة 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">شهادة مهندس معتمد</h3>
+                            <p class="card-text mobile-sm-text">شهادة مهنية في أنظمة التحكم الصناعية من IEEE</p>
+                        </div>
+                    </div>
+                </div>
+                 <!--6-->
+                 <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-effect h-100">
+                        <img src="imeges/cert1.jpg" class="card-img-top mobile-sm-img" alt="شهادة 1">
+                        <div class="card-body p-3">
+                            <h3 class="card-title mobile-sm-text">شهادة مهندس معتمد</h3>
+                            <p class="card-text mobile-sm-text">شهادة مهنية في أنظمة التحكم الصناعية من IEEE</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- كروت شهادات إضافية بنفس النمط -->
+            </div>
+        </div>
+    </section>
+
+    <!-- التواصل -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center text-white mb-5">تواصل معنا</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-phone fa-3x icon mb-3"></i>
+                            <h3 class="card-title">الاتصال الهاتفي</h3>
+                            <p class="card-text">+218 91 191 7490</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-effect h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-envelope fa-3x icon mb-3"></i>
+                            <h3 class="card-title">البريد الإلكتروني</h3>
+                            <p class="card-text">anas.addanfor@gmail.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="certifications" id="certifications">
-            <h2 class="title">الشهادات</h2>
-            <div class="content">
-                <div class="certification_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
-                    </div>
-                </div>
-                <div class="certification_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
-                    </div>
-                </div>
-                <div class="certification_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
-                    </div>
-                </div>
-                <div class="certification_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
-                    </div>
-                </div>
-                <div class="certification_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
-                    </div>
-                </div>
-                <div class="certification_card">
-                    <div class="img">
-                        <img src="./imeges/نصوص-منتصر-القفاش.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-                        <strong class="project-title">
-                            <span>lorem ipsum</span>
-                            <a href="#" class="more_details">للمزيد من التفاصيل</a>
-                        </strong>
-    
-                    </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-white mb-0">&copy; 2024 جميع الحقوق محفوظة <span class="text-warning">أنس الدنفور</span></p>
+                <div class="social-icons mt-3 mt-md-0">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-white"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
-        </section>
-    
-        <section class="contact" id="contact">
-            <h2 class="title">لنتعاون معا</h2>
-    
-            <div class="content">
-    
-                
-                <div class="card">
-                    <div class="icon">
-                        <i class="fas fas fa-phone"></i>
-                    </div>
-                    <div class="info">
-                        <h3>هاتف</h3>
-                        <p>+218-911917490</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="info">
-                        <h3>ايميل</h3>
-                        <p>anas.addanfor@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-    
-        </section>
-    
-        <footer class="footer">
-            <p>@ جميع الحقوق محفوظة <span>أنس الدنفور</span></p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100011719296874"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/anas-eddanfor-bb068420b/"><i class="fab fa-linkedin"></i></a>
-                <a href="http://wa.me/+218911917490"><i class="fab fa-whatsapp"></i></a>
-                <a href="mailto:anas.addanfor@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-            </div>
-        </footer>
-    </body>
-    </html>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
