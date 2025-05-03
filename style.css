@@ -353,6 +353,11 @@ body {
 }
 
 @media only screen and (device-width: 1080px) and (device-height: 2400px) and (-webkit-device-pixel-ratio: 2.625) and (orientation: portrait) {
+    .main {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(imeges/000.png) center/cover fixed;
+        margin-top: 60px;
+    }
     .card-effect {
         max-width: 90% !important;
         margin: 10px auto !important;
