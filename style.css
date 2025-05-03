@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'El Messiri', sans-serif;
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    direction: rtl;
+    text-align: right;
+}
+h3{
+    user-select:none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #262626;
+    opacity: 0.80;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 180px;
+}
+section{
+    padding: 80px 20px;
+}
+
+.logo img {
+    height: 45px;       /* يمكنك التعديل حسب الحاجة */
+    width: auto;
+    display: block;
+    opacity: 1;
+}
+.navigation a{
+    margin: 0 0 0 15px;
+    color: #bc961b;
+    font-size: 1.25em;
+    font-weight: 700;
+    width: fit-content;
+    position: relative;
+
+}
+.navigation a::before{
+    content: attr(data-text);
+    position: absolute;
+    -webkit-text-fill-color: #dedede;
+    transition:0.4s;
+    width: 0;
+    overflow: hidden;
+}
+.navigation a:hover::before{
+    width: 100%;
+}
+section{
+    padding: 100px 200px;
+    
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imeges/anas1.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+
+}
+
+
+.main h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #dedede;
+}
+.main h2 span{
+    display: inline-block;
+    color:#bc961b ;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.main h3 {
+    color: #dedede;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main .main_button{
+    color: #dedede;
+    background-color: #bc961b;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.9em 1em;
+    letter-spacing:1px;
+    border-radius: 17px;
+    display: inline-block;
+    margin-bottom: 40px;
+    transition: 0.5s  ease;
+}
+.main_button:hover{
+    background-color:#e6b512 ;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #dedede;
+    font-size: 2em;
+    padding-left: 30px;
+}
+.cards {
+    background: url(imeges/white.png) no-repeat;
+    background-size: cover;
+    backdrop-filter:invert(50px);
+    background-position: center;
+    background-attachment:fixed;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #be9100;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.content .card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.content .card:hover{
+    transform: scale(1.104);
+}
+.content .card .icon{
+    color: #bc961b;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #bc961b;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background: url(imeges/black.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+.projects .content{
+    margin-top: 50px;
+}
+.project_card{
+    
+    background-color:#fff ;
+    border: 2px solid #dedede;
+    min-height: 14em;
+    width: 25em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project_card:hover{
+    transform: scale(1.1);
+}
+.project_card:hover .img{
+    opacity: 0.95;
+}
+.project_card .img img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+project-category{
+    font-size: 0.8em;
+    color: #000;
+
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.project-title .more_details{
+    color: #bc961b;
+}
+.project-title .more_details:hover{
+    color: #262626;
+}
+
+
+.certifications{
+    background: url(imeges/white.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.certification_card{
+    background-color:#fff ;
+    border: 4px solid #fafafa;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    min-height: 14em;
+    width: 25em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.certification_card:hover{
+    transform: scale(1.1);
+}
+.certification_card:hover .img{
+    opacity: 0.95;
+}
+.certification_card .img img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+project-category{
+    font-size: 0.8em;
+    color: #000;
+
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.project-title .more_details{
+    color: #bc961b;
+}
+.project-title .more_details:hover{
+    color: #262626;
+}
+.contact {
+    background: url(imeges/black.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+.contact .content .icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: #000;
+}
+.contact .info p{
+    font-size: 1.2em;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(imeges/black.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    color: #dedede;
+    padding: 1.5em;
+}
+.footer .social-icons a{
+    font-size:1.3em ;
+    padding: 0px 12px 0px 0px;
+    color: #dedede;
+
+}
+.footer p{
+    font-size: 1.2em;
+    font-weight: 600;
+    align-self: center;
+}
+.footer p span{
+    color: #bc961b;
+}
+
+@media(max-width:1620px){
+    header{
+        width: 100%;
+        padding: 12px 20px;
+    }
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(imeges/anas1.png) no-repeat;
+        background-size:cover;
+        background-position: center;
+        background-attachment:fixed;
+    }
+    .navigation a{
+        
+        padding-left: 10px;
+    }
+    section{
+        padding: 80px 20px;
+    }
+
+    
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(imeges/anas1.png) no-repeat;
+        background-size:cover;
+        background-position: right;
+        background-attachment:fixed;
+    }
+    .main div{
+        padding: 20px 60px;
+        border-radius: 15px 50px 30px 15px;
+
+    }
+
+    .content{
+        flex-direction:row-reverse ;
+        align-items: center;
+    }
+    .projects .content .project_card{
+        width: 21.25em; ;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 5%;
+    }
+    
+    .navigation a {
+        font-size: 0.9em;
+        margin: 0 10px;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+    
+    .main .social-icons a {
+        font-size: 1.5em;
+        padding-left: 15px;
+    }
+    
+    .project_card:hover,
+    .certification_card:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navigation {
+        justify-content: center;
+    }
+    
+    .main h2 {
+        font-size: 1em;
+    }
+    
+    .main_button {
+        font-size: 0.9em;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer .social-icons {
+        margin-top: 15px;
+    }
+}
