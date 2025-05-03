@@ -367,7 +367,7 @@ body {
     
     /* تعديلات الكروت */
     .card-effect {
-        max-width: 95%;
+        max-width: 70%;
         margin: 10px auto;
         border-radius: 12px !important;
     }
