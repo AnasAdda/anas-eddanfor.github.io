@@ -351,3 +351,52 @@ body {
         font-size: 2rem !important;
     }
 }
+
+@media only screen and (device-width: 1080px) and (device-height: 2400px) and (-webkit-device-pixel-ratio: 2.625) and (orientation: portrait) {
+    .card-effect {
+        max-width: 90% !important;
+        margin: 10px auto !important;
+        transform: scale(0.95);
+    }
+    
+    .card-img-top {
+        height: 180px !important;
+        object-position: center 30%;
+    }
+    
+    .card-title {
+        font-size: 1rem !important;
+        line-height: 1.4;
+    }
+    
+    .card-text {
+        font-size: 0.75rem !important;
+        line-height: 1.6;
+    }
+    
+    .btn-gold {
+        padding: 0.3rem 1rem !important;
+        font-size: 0.75rem !important;
+    }
+    
+    .icon {
+        font-size: 2.2rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+/* تعديلات خاصة بالوضع الأفقي */
+@media only screen and (device-width: 2400px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2.625) and (orientation: landscape) {
+    .card-effect {
+        max-width: 300px !important;
+        margin: 15px !important;
+    }
+    
+    .card-img-top {
+        height: 200px !important;
+    }
+    
+    .card-title {
+        font-size: 1.1rem !important;
+    }
+}
