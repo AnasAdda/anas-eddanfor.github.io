@@ -172,7 +172,7 @@ body {
 }
 
 /* الأقسام المختلفة */
-#services, #projects, #certifications, #contact {
+#services, #skils, #certifications, #contact {
     padding: 6rem 0;
 }
 #phone_number{
@@ -198,7 +198,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
                 url(imeges/white.png) center/cover fixed;
 }
 
-#projects{
+#skils{
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
                 url(imeges/black.png) center/cover fixed;
 }
