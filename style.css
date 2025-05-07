@@ -55,7 +55,7 @@ body {
 /* القسم الرئيسي */
 .main {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url(imeges/anas1.png) center/cover fixed;
+                url(imeges/anas.png) center/cover fixed;
     min-height: 100vh;
     margin-top: 76px;
     display: flex;
