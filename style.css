@@ -164,6 +164,7 @@ body {
 .btn-gold:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(188, 150, 27, 0.3) !important;
+    background-color: #a37e15;
 }
 
 .btn-gold:hover::before {
@@ -176,6 +177,19 @@ body {
 }
 #phone_number{
     direction: ltr;
+}
+
+
+.skill-icon {
+    color: #bc961b;
+    font-size: 2rem;
+}
+.skill-card {
+border: none;
+background-color: #f9f9f9;
+border-radius: 10px;
+padding: 1rem;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 
@@ -297,6 +311,9 @@ body {
     .btn-gold {
         padding: 0.25rem 0.75rem;
         font-size: 0.8rem;
+        background-color: #bc961b;
+        color: white;
+        border: none;
     }
 }
 
@@ -415,3 +432,4 @@ body {
     .icon {
         font-size: 2rem !important;
     }
+}
