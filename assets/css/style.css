@@ -38,6 +38,7 @@
   --yellow-color: #FFC107;           /* ذهبي دافئ */
   --foreground-color: #2C2C2C;       /* أسود فاتح للنصوص */
   --foreground-sub-color: #5D5D5D;   /* رمادي للنصوص الثانوية */
+  --background-color: rgb(228, 231, 235);
   --body-text-color: #333333;        /* لون النصوص الأساسي */
   --text-white-color: #FFFFFF;       /* أبيض */
   --body-background-color: #FDFDF5;  /* كريمي فاتح */
@@ -988,7 +989,7 @@ select {
 }
 
 .title-stroke {
-  text-shadow: 3px 3px 0 #ee5f38, -1px -1px 0 #ee5f38, 1px -1px 0 #ee5f38, -1px 1px 0 #ee5f38, 1px 1px 0 #ee5f38;
+  text-shadow: 3px 3px 0 #B8860B, -1px -1px 0 #B8860B, 1px -1px 0 #B8860B, -1px 1px 0 #B8860B, 1px 1px 0 #B8860B;
 }
 
 #scroll__top.active {
@@ -5033,7 +5034,7 @@ blockquote::before {
   font-size: 3.8rem;
   line-height: 4rem;
   color: var(--text-white-color);
-  text-shadow: 3px 3px 0 #ee5f38, -1px -1px 0 #ee5f38, 1px -1px 0 #ee5f38, -1px 1px 0 #ee5f38, 1px 1px 0 #ee5f38;
+  text-shadow: 3px 3px 0 #B8860B, -1px -1px 0 #B8860B, 1px -1px 0 #B8860B, -1px 1px 0 #B8860B, 1px 1px 0 #B8860B;
   opacity: 0.2;
 }
 
