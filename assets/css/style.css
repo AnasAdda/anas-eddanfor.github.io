@@ -5163,7 +5163,7 @@ blockquote::before {
 
 @media only screen and (min-width: 992px) {
   .about__content {
-    width: 50%;
+    width: 53%;
   }
 }
 
@@ -5255,7 +5255,7 @@ blockquote::before {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--foreground-sub-color);
-  position: relative;
+  position:relative;
   padding: 0.8rem 0 0.8rem 2.5rem;
 }
 
@@ -5353,46 +5353,46 @@ blockquote::before {
 }
 
 .about__experience {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .about__experience {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .about__experience {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
 .about__experience--title {
-  font-size: 5rem;
-  line-height: 5.4rem;
+  font-size: 3rem;
+  line-height: 4rem;
   color: var(--text-white-color);
   margin-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .about__experience--title {
-    font-size: 6rem;
-    line-height: 6.4rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .about__experience--title {
-    font-size: 7rem;
-    line-height: 6.4rem;
+    font-size: 5rem;
+    line-height: 6rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .about__experience--title {
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
   }
 }
 
