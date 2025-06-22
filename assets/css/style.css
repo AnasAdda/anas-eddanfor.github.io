@@ -5618,41 +5618,46 @@ blockquote::before {
 }
 
 .resume__content--title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
+}
+.my-icon {
+  height: 90%; /* أو auto للحفاظ على نسبة العرض إلى الارتفاع */
+  vertical-align: middle; /* لمحاذاة الأيقونة مع النص إذا كانت بجانبه **/
 }
 
 @media only screen and (min-width: 576px) {
   .resume__content--title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.3rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .resume__content--title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .resume__content--title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 2.8rem;
   }
 }
 
 @media only screen and (min-width: 1366px) {
   .resume__content--title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3rem;
   }
 }
 
 .resume__content--subtitle {
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 1.4rem;
   line-height: 2rem;
   background: var(--secondary-color);
   color: var(--text-white-color);
@@ -5663,7 +5668,7 @@ blockquote::before {
 
 @media only screen and (min-width: 1200px) {
   .resume__content--subtitle {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -5673,8 +5678,9 @@ blockquote::before {
     line-height: 2.6rem;
   }
 }
-
+/*
 .resume__date {
+  direction: rtl;
   font-size: 1.7rem;
   line-height: 2rem;
   font-weight: 500;
@@ -5684,6 +5690,7 @@ blockquote::before {
 }
 
 .resume__date::before {
+  direction: rtl;
   position: absolute;
   content: "";
   width: 0.7rem;
@@ -5694,7 +5701,31 @@ blockquote::before {
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
 }
+*/
+.resume__date {
+  direction: rtl; /* هذا يضمن اتجاه النص نفسه */
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  position: relative;
+  /* تم تغيير padding-left إلى padding-right لتوفير مساحة للمربع على اليمين */
+  padding-right: 2rem;
+}
 
+.resume__date::before {
+  /* هنا لا نحتاج لـ direction: rtl; لأنه لا يؤثر على تموضع العناصر المطلقة */
+  position: absolute;
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background: var(--secondary-color);
+  /* تم تغيير left: 0 إلى right: 0 لوضع المربع على اليمين */
+  right: 0;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+  transform: translatey(-50%);
+}
 /*
     15. Skills css
 */
