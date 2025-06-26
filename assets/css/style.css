@@ -5780,6 +5780,7 @@ blockquote::before {
 
 .skills__field {
   position: relative;
+  align-items: center;
 }
 
 .skills__field::before {
@@ -5901,6 +5902,57 @@ blockquote::before {
   left: 50%;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
+}
+
+.skils__info--wrapper {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  direction: rtl; /* إضافة دعم RTL */
+}
+
+.skils__info--items {
+  width: 80%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: var(--foreground-sub-color);
+  position:relative;
+  padding: 0.7rem 4rem 1rem 0rem; /* تعديل الحشو */
+  text-align: right; /* محاذاة النص لليمين */
+}
+
+@media only screen and (min-width: 992px) {
+  .skils__info--items {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    padding: 0.7rem 4rem 1rem 0rem; /* تعديل الحشو */
+  }
+}
+
+.skils__info--items::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--secondary-color);
+  top: 50%;
+  right: 0; /* تغيير الموضع من اليسار لليمين */
+  left: auto; /* إلغاء القيمة الافتراضية */
+  transform: translatey(-50%);
+  border-radius: 50%;
+}
+
+.skils__info--items::after {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: var(--secondary-color);
+  top: 50%;
+  right: 7px; /* تغيير الموضع من اليسار لليمين */
+  left: 10PX; /* إلغاء القيمة الافتراضية */
+  transform: translatey(-50%);
+  border-radius: 50%;
 }
 
 /*
