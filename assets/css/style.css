@@ -5729,6 +5729,7 @@ blockquote::before {
 /*
     15. Skills css
 */
+/*
 .skills__section--inner {
   gap: 3rem;
 }
@@ -5759,6 +5760,7 @@ blockquote::before {
             flex-direction: column;
   }
 }
+  */
 
 .skills__step {
   width: 50%;
@@ -5780,16 +5782,15 @@ blockquote::before {
 
 .skills__field {
   position: relative;
-  align-items: center;
+  right: 10%;
 }
 
 .skills__field::before {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 1rem;
+  width: 80%;
+  height: 0.6rem;
   bottom: 0;
-  left: 0;
   background-color: #e5e7eb;
   border-radius: 2rem;
 }
@@ -5797,16 +5798,16 @@ blockquote::before {
 .skills__field::after {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 0.6rem;
-  bottom: 2px;
-  left: 0;
+  width: 80%;
+  height: 0.4rem;
+  bottom: 1px;
   background-color: var(--secondary-color);
   border-radius: 2rem;
 }
 
 .skills__field.width_60::after {
-  width: 60%;
+  width: 40%;
+
 }
 
 .skills__field.width_75::after {
@@ -5828,6 +5829,7 @@ blockquote::before {
 .skills__text {
   position: relative;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .skills__name {
@@ -5911,7 +5913,7 @@ blockquote::before {
 }
 
 .skils__info--items {
-  width: 80%;
+  width: 90%;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.5rem;
@@ -5926,6 +5928,18 @@ blockquote::before {
     font-size: 1.9rem;
     line-height: 2.5rem;
     padding: 0.7rem 4rem 1rem 0rem; /* تعديل الحشو */
+    width: 90%;
+
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .skils__info--items {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 0.7rem 4rem 1rem 0rem; /* تعديل الحشو */
+    width: 90%;
+
   }
 }
 
