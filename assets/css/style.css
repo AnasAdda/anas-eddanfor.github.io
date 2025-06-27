@@ -5791,8 +5791,9 @@ blockquote::before {
   width: 80%;
   height: 0.6rem;
   bottom: 0;
-  background-color: #333333;
+  background-color: #5D5D5D;
   border-radius: 2rem;
+  
 }
 
 .skills__field::after {
@@ -5857,6 +5858,11 @@ blockquote::before {
     font-size: 1.2rem;
     line-height: 2.8rem;
   }
+}
+@media only screen and (max-width:900px) {
+  .skills__name {
+  font-size: 1.5rem;
+  font-weight: 500;  
 }
 
 .skills__count.width_60 {
