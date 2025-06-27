@@ -5729,26 +5729,26 @@ blockquote::before {
 /*
     15. Skills css
 */
-/*
+
 .skills__section--inner {
-  gap: 3rem;
+  gap: 0.5rem;
 }
 
 @media only screen and (min-width: 992px) {
   .skills__section--inner {
-    gap: 5rem;
+    gap: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .skills__section--inner {
-    gap: 12rem;
+    gap: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 1366px) {
   .skills__section--inner {
-    gap: 22rem;
+    gap: 0.5rem;
   }
 }
 
@@ -5756,11 +5756,10 @@ blockquote::before {
   .skills__section--inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        
   }
 }
-  */
+
 
 .skills__step {
   width: 50%;
