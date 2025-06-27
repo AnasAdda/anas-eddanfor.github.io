@@ -5861,8 +5861,15 @@ blockquote::before {
 }
 @media only screen and (max-width:900px) {
   .skills__name {
-  font-size: 1.5rem;
-  font-weight: 500;  
+    font-size: 1.5rem;
+    font-weight: 500; 
+  } 
+}
+@media only screen and (max-width: 480px) {
+  .skills__name {
+    font-size: 1.3rem;
+    font-weight: 500;  
+  }
 }
 
 .skills__count.width_60 {
