@@ -5791,7 +5791,7 @@ blockquote::before {
   width: 80%;
   height: 0.6rem;
   bottom: 0;
-  background-color: #e5e7eb;
+  background-color: #333333;
   border-radius: 2rem;
 }
 
