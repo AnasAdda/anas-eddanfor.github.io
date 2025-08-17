@@ -4371,6 +4371,7 @@ blockquote::before {
   .element-item {
     align-self: center;
     width: 50%;
+    
   }
 }
 
